@@ -9,7 +9,10 @@ const Banner = () => {
       <Carousel.Item>
         <img className="d-block w-100" src={img1} alt="First slide" />
         <Carousel.Caption className="h-100 d-flex align-items-center justify-content-center flex-column  text-white">
-          <h2 className="text-warning" style={{ fontSize: "70px", fontFamily: "'Allura', cursive" }}>
+          <h2
+            className="text-warning  fw-semibold"
+            style={{ fontSize: "70px", fontFamily: "'Allura', cursive" }}
+          >
             Taste the Difference
           </h2>
           <h1 style={{ fontSize: "80px" }}>Fine & Delicious Food</h1>
@@ -19,7 +22,10 @@ const Banner = () => {
       <Carousel.Item>
         <img className="d-block w-100" src={img2} alt="Second slide" />
         <Carousel.Caption className="h-100 d-flex align-items-center justify-content-center flex-column  text-white">
-          <h2 className="text-warning" style={{ fontSize: "70px", fontFamily: "'Allura', cursive" }}>
+          <h2
+            className="text-warning fw-semibold"
+            style={{ fontSize: "70px", fontFamily: "'Allura', cursive" }}
+          >
             Experience the grand setting
           </h2>
           <h1 className="text-uppercase" style={{ fontSize: "80px" }}>
@@ -33,7 +39,7 @@ const Banner = () => {
         <Carousel.Caption className="h-100 d-flex align-items-center justify-content-center flex-column  text-white">
           <div style={{ marginLeft: "700px" }}>
             <h5
-              className="text-start text-warning"
+              className="text-start text-warning fw-semibold"
               style={{ fontSize: "70px", fontFamily: "'Allura', cursive" }}
             >
               Todays Special

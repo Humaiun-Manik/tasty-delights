@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "react-bootstrap";
 import Flower from "../../../components/Flower";
-import Button from "../../../components/Button";
+import ButtonWarning from "../../../components/ButtonWarning";
 import img1 from "./../../../assets/images/home/home-image-1-2.jpg";
 import img2 from "./../../../assets/images/home/home-image-1-1.jpg";
 import img3 from "./../../../assets/images/home/davide-cantelli-jpkfc5_d-DI-unsplash.jpg";
@@ -17,7 +17,7 @@ const CoreFeatures = () => {
               <Card.Body>
                 <Card.Title>
                   <h2
-                    className="text-body-tertiary mb-0"
+                    className="text-body-tertiary fw-semibold mb-0"
                     style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
                   >
                     History of
@@ -30,7 +30,7 @@ const CoreFeatures = () => {
                   voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
                   cupiditate non provident.
                 </Card.Text>
-                <Button>Our Story</Button>
+                <ButtonWarning>Our Story</ButtonWarning>
               </Card.Body>
             </Card>
           </Col>
@@ -49,7 +49,7 @@ const CoreFeatures = () => {
               <Card.Body>
                 <Card.Title>
                   <h2
-                    className="text-body-tertiary mb-0"
+                    className="text-body-tertiary fw-semibold mb-0"
                     style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
                   >
                     Delicated
@@ -62,14 +62,14 @@ const CoreFeatures = () => {
                   voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
                   cupiditate non provident.
                 </Card.Text>
-                <Button>View More</Button>
+                <ButtonWarning>View More</ButtonWarning>
               </Card.Body>
             </Card>
           </Col>
         </Row>
       </div>
       <div
-        className="d-flex align-items-center justify-content-center"
+        className="d-flex align-items-center justify-content-center "
         style={{
           height: "700px",
           background: `rgba(0,0,0,0.7)url(${img3})`,

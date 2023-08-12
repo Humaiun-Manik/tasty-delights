@@ -16,7 +16,7 @@ const features = () => {
       <div className="container">
         <div className="text-center my-5">
           <h2
-            className="text-body-tertiary mb-0"
+            className="text-body-tertiary fw-semibold mb-0"
             style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
           >
             For your comfort
@@ -101,7 +101,9 @@ const features = () => {
       </div>
       <div className="discount">
         <div className="discount-text">
-          <h2 style={{ fontFamily: "'Allura', cursive" }}>Enjoy with Family and Friends</h2>
+          <h2 className=" fw-semibold" style={{ fontFamily: "'Allura', cursive" }}>
+            Enjoy with Family and Friends
+          </h2>
           <h1>25% Discount</h1>
           <p>for Family Parties! Coupon 015</p>
           <Link to={"/"} style={{ fontFamily: "'Allura', cursive" }}>
