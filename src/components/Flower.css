@@ -1,0 +1,13 @@
+.flower-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flower-container div {
+  width: 70px;
+  border-bottom: 3px solid #8080804f;
+}
+.flower-container img {
+  width: 50px;
+  margin: 0 15px;
+}
