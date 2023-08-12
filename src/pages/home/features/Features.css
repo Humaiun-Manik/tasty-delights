@@ -1,0 +1,56 @@
+.feature {
+  border-top: 4px solid red !important;
+  transition: 0.2s;
+}
+.feature:hover {
+  border-top: 4px solid #ffc107 !important;
+}
+.title {
+  transition: 1s;
+}
+.feature:hover .title {
+  color: #ffc107;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 850px;
+  margin: 100px 0;
+  background: rgba(0, 0, 0, 0.7) url("./../../../assets/images/home/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.discount-text {
+  width: 50%;
+  text-align: center;
+}
+.discount-text h2 {
+  color: #ffc107;
+  font-size: 64px;
+  margin: 30px 0;
+}
+.discount-text h1 {
+  color: #fff;
+  font-size: 74px;
+  padding: 30px 0;
+  width: 100%;
+  border: 10px dotted #ffc107;
+}
+.discount-text p {
+  color: #fff;
+  font-size: 28px;
+  margin: 20px 0;
+}
+.discount-text a {
+  color: #ffc107;
+  font-size: 76px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.discount-text a:hover {
+  color: #fff;
+  text-decoration-line: line-through;
+  text-decoration-color: #ffc107;
+}

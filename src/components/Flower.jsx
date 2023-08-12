@@ -1,11 +1,10 @@
-import flower from "./../assets/images/logo/flower-decor.webp";
 import "./Flower.css";
 
-const Flower = () => {
+const Flower = ({ children }) => {
   return (
     <div className="flower-container">
       <div></div>
-      <img src={flower} alt="" />
+      <img src={children} alt="" />
       <div></div>
     </div>
   );

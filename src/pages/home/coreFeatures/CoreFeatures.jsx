@@ -4,6 +4,7 @@ import Button from "../../../components/Button";
 import img1 from "./../../../assets/images/home/home-image-1-2.jpg";
 import img2 from "./../../../assets/images/home/home-image-1-1.jpg";
 import img3 from "./../../../assets/images/home/davide-cantelli-jpkfc5_d-DI-unsplash.jpg";
+import flower from "./../../../assets/images/logo/flower-decor.webp";
 import { Link } from "react-router-dom";
 
 const CoreFeatures = () => {
@@ -22,7 +23,7 @@ const CoreFeatures = () => {
                     History of
                   </h2>
                   <h1 className="fw-bold">Our Restaurant</h1>
-                  <Flower />
+                  <Flower>{flower}</Flower>
                 </Card.Title>
                 <Card.Text className="my-4 fs-5 text-secondary">
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
@@ -54,7 +55,7 @@ const CoreFeatures = () => {
                     Delicated
                   </h2>
                   <h1 className="fw-bold">Our Services</h1>
-                  <Flower />
+                  <Flower>{flower}</Flower>
                 </Card.Title>
                 <Card.Text className="my-4 fs-5 text-secondary">
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
@@ -69,7 +70,12 @@ const CoreFeatures = () => {
       </div>
       <div
         className="d-flex align-items-center justify-content-center"
-        style={{ height: "700px", backgroundImage: `url(${img3})`, backgroundSize: "cover" }}
+        style={{
+          height: "700px",
+          background: `rgba(0,0,0,0.7)url(${img3})`,
+          backgroundSize: "100%",
+          backgroundBlendMode: "darken",
+        }}
       >
         <div className="text-center mt-5 pt-5">
           <h1 style={{ fontSize: "72px", color: "red" }}>Over 250 Delicious & Tasty</h1>
