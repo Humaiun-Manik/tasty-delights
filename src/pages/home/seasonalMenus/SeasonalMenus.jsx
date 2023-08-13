@@ -14,8 +14,12 @@ import item3 from "./../../../assets/images/home/seasonal-item-3.jpg";
 import item4 from "./../../../assets/images/home/seasonal-item-4.jpg";
 import item5 from "./../../../assets/images/home/seasonal-item-5.jpg";
 import item6 from "./../../../assets/images/home/seasonal-item-6.jpg";
+import { useState } from "react";
+import ItemsModal from "../ItemsModal";
+import { BsPlusLg } from "react-icons/bs";
 
 const SeasonalMenus = () => {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <div className="mb-5 pb-5">
       <div className="container">
@@ -123,32 +127,51 @@ const SeasonalMenus = () => {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={8}>
+          <Col sm={12} md={8} className="seasonal-items">
             <Row xs={1} md={3}>
               <Col className="p-0 item">
                 <img className="w-100" src={item1} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
-              <Col className="p-0">
-                <img className="w-100" src={item2} alt="" />
+              <Col className="p-0 item">
+                <img onClick={() => setModalShow(true)} className="w-100" src={item2} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
-              <Col className="p-0">
-                <img className="w-100" src={item3} alt="" />
+              <Col className="p-0 item">
+                <img onClick={() => setModalShow(true)} className="w-100" src={item3} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
             </Row>
             <Row xs={1} md={3}>
-              <Col className="p-0">
-                <img className="w-100" src={item4} alt="" />
+              <Col className="p-0 item">
+                <img onClick={() => setModalShow(true)} className="w-100" src={item4} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
-              <Col className="p-0">
-                <img className="w-100" src={item5} alt="" />
+              <Col className="p-0 item">
+                <img onClick={() => setModalShow(true)} className="w-100" src={item5} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
-              <Col className="p-0">
-                <img className="w-100" src={item6} alt="" />
+              <Col className="p-0 item">
+                <img onClick={() => setModalShow(true)} className="w-100" src={item6} alt="" />
+                <div className="content d-flex align-items-center justify-content-center">
+                  <BsPlusLg onClick={() => setModalShow(true)} className="plus-icon" />
+                </div>
               </Col>
             </Row>
           </Col>
         </Row>
       </div>
+      <ItemsModal show={modalShow} onHide={() => setModalShow(false)}></ItemsModal>
     </div>
   );
 };
