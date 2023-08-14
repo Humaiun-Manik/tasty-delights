@@ -21,7 +21,7 @@ const features = () => {
           >
             For your comfort
           </h2>
-          <h1 className="fw-bold">Stunning Things</h1>
+          <h1>Stunning Things</h1>
           <Flower>{flower}</Flower>
         </div>
         <Row xs={1} md={2} lg={3} className="g-5 my-5">

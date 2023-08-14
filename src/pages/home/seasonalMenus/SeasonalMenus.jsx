@@ -27,8 +27,8 @@ const SeasonalMenus = () => {
           <Col className="my-5">
             <div className="seasonal-menu">
               <div className="text-end">
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -39,8 +39,8 @@ const SeasonalMenus = () => {
             </div>
             <div className="seasonal-menu">
               <div className="text-end">
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -51,8 +51,8 @@ const SeasonalMenus = () => {
             </div>
             <div className="seasonal-menu">
               <div className="text-end">
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -71,8 +71,8 @@ const SeasonalMenus = () => {
                 <img src={ico4} alt="" />
               </div>
               <div>
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -83,8 +83,8 @@ const SeasonalMenus = () => {
                 <img src={ico5} alt="" />
               </div>
               <div>
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -95,8 +95,8 @@ const SeasonalMenus = () => {
                 <img src={ico6} alt="" />
               </div>
               <div>
-                <h3>Salubrious Snacks</h3>
-                <p className="lh-base fs-4 text-secondary">
+                <h4>Salubrious Snacks</h4>
+                <p className="lh-base fs-5 text-secondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid iduntus
                   ut
                 </p>
@@ -116,9 +116,9 @@ const SeasonalMenus = () => {
                 >
                   Embracing
                 </h1>
-                <h1 className="fw-bold">Seasonal Menus</h1>
+                <h1>Seasonal Menus</h1>
                 <div className="under-line"></div>
-                <p className="w-75 mx-auto fs-5 lh-lg text-secondary">
+                <p className="w-75 mx-auto lh-lg text-secondary">
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                   voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
                   cupiditate non provident.

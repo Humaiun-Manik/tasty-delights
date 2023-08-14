@@ -2,10 +2,10 @@
   display: flex;
   margin-top: 30px;
 }
-.seasonal-menu h3 {
+.seasonal-menu h4 {
   transition: 0.5s;
 }
-.seasonal-menu:hover h3 {
+.seasonal-menu:hover h4 {
   color: #ffc107;
 }
 .seasonal-menu img {
@@ -46,8 +46,8 @@
 }
 .plus-icon {
   color: #fff;
-  font-size: 300px;
-  transition: 0.9s;
+  font-size: 200px;
+  transition: 0.7s;
   cursor: pointer;
 }
 .plus-icon:hover {

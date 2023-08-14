@@ -22,7 +22,7 @@ const CoreFeatures = () => {
                   >
                     History of
                   </h2>
-                  <h1 className="fw-bold">Our Restaurant</h1>
+                  <h1>Our Restaurant</h1>
                   <Flower>{flower}</Flower>
                 </Card.Title>
                 <Card.Text className="my-4 fs-5 text-secondary">
@@ -54,7 +54,7 @@ const CoreFeatures = () => {
                   >
                     Delicated
                   </h2>
-                  <h1 className="fw-bold">Our Services</h1>
+                  <h1>Our Services</h1>
                   <Flower>{flower}</Flower>
                 </Card.Title>
                 <Card.Text className="my-4 fs-5 text-secondary">
