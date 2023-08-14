@@ -1,0 +1,6 @@
+.menu a {
+  transition: 0.9s;
+}
+.menu a:hover {
+  color: #ffc107 !important;
+}

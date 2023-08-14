@@ -1,5 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../../../assets/images/logo/logo.png";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -10,26 +12,26 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto fs-5 ">
-            <Nav.Link className="me-4 text-light black-hover" href="#features">
+          <Nav className="me-auto fs-5 menu">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/"}>
               Home
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/about"}>
               About Us
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/events"}>
               Events
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/menu"}>
               Menu
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/reservation"}>
               Reservation
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/shop"}>
               Shop
             </Nav.Link>
-            <Nav.Link className="me-4 text-light" href="#pricing">
+            <Nav.Link as={Link} className="me-4 text-light" to={"/contact"}>
               Contact Us
             </Nav.Link>
           </Nav>

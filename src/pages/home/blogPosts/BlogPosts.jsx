@@ -19,7 +19,7 @@ const BlogPosts = () => {
         <h1>Blog Posts</h1>
         <Flower>{flower}</Flower>
       </div>
-      <Row xs={1} md={2} className="g-4 mb-5">
+      <Row xs={1} md={2} className="g-4 mb-5 pb-5">
         <Col>
           <Card className="border-0 shadow blog">
             <Card.Img variant="top" src={blog1} />

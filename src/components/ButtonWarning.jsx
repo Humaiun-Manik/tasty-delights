@@ -1,4 +1,5 @@
 import "./ButtonWarning.css";
+import PropTypes from "prop-types";
 
 const ButtonWarning = ({ children }) => {
   return (
@@ -6,6 +7,10 @@ const ButtonWarning = ({ children }) => {
       <button className="w-100 py-2">{children}</button>
     </div>
   );
+};
+
+ButtonWarning.propTypes = {
+  children: PropTypes.string.isRequired,
 };
 
 export default ButtonWarning;

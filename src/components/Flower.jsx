@@ -1,4 +1,5 @@
 import "./Flower.css";
+import PropTypes from "prop-types";
 
 const Flower = ({ children }) => {
   return (
@@ -8,6 +9,10 @@ const Flower = ({ children }) => {
       <div></div>
     </div>
   );
+};
+
+Flower.propTypes = {
+  children: PropTypes.string.isRequired,
 };
 
 export default Flower;
