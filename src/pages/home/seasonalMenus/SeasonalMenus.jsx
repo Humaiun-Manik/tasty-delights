@@ -1,3 +1,4 @@
+import React from "react";
 import "./SeasonalMenus.css";
 import { Col, Row } from "react-bootstrap";
 import img1 from "./../../../assets/images/home/center-img2.jpg";

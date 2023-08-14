@@ -1,3 +1,4 @@
+import React from "react";
 import "./Footer.css";
 import { Col, Form, InputGroup, Row } from "react-bootstrap";
 import { FaFacebookF, FaTwitter, FaGooglePlusG } from "react-icons/fa";

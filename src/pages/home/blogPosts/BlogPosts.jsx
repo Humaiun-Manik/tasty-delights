@@ -1,3 +1,4 @@
+import React from "react";
 import "./BlogPosts.css";
 import { Card, Col, Image, Row } from "react-bootstrap";
 import Flower from "../../../components/Flower";

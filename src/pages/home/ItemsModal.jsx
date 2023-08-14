@@ -1,3 +1,4 @@
+import React from "react";
 import { Modal } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

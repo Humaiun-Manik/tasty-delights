@@ -1,3 +1,4 @@
+import React from "react";
 import "./Features.css";
 import { Card, Col, Row } from "react-bootstrap";
 import Flower from "../../../components/Flower";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./TeamMembers.css";
 import { Col, Row } from "react-bootstrap";
 import Flower from "../../../components/Flower";
