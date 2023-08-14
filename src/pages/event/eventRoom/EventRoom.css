@@ -1,0 +1,18 @@
+.event-room {
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6)
+    url("./../../../assets/images/events/wedding-dreamz-pqkn1uIS6jY-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.event-room h1 {
+  font-size: 54px;
+}
+
+.flower-logo div {
+  width: 100px;
+  height: 1px;
+  background-color: #80808086;
+  margin-right: 20px;
+  margin-left: 20px;
+}
