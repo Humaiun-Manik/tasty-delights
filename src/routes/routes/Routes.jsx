@@ -4,6 +4,7 @@ import Main from "../../layout/Main";
 import Home from "../../pages/home/Home";
 import About from "../../pages/about/About";
 import Event from "../../pages/event/Event";
+import Contact from "../../pages/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "event",
         element: <Event />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },
