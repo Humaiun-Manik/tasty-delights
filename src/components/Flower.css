@@ -5,7 +5,8 @@
 }
 .flower-container div {
   width: 70px;
-  border-bottom: 3px solid #8080804f;
+  height: 1px;
+  background-color: #4e4e4e4f;
 }
 .flower-container img {
   width: 50px;

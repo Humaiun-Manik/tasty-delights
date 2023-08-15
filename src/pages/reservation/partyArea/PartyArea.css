@@ -1,0 +1,28 @@
+.event-banner {
+  height: 500px;
+  background: rgba(0, 0, 0, 0.3) url("./../../../assets/images/reservation/Reservation-parallax.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 80px;
+}
+
+.event-banner h1 {
+  font-size: 64px;
+  color: #fff;
+}
+
+.area {
+  transition: transform 0.5s;
+  filter: grayscale(0%);
+}
+.party-area:hover .area {
+  transform: scale(1.2);
+  filter: grayscale(100%);
+}
+
+.img-logo {
+  transition: transform 1s;
+}
+.party-area:hover .img-logo {
+  transform: rotate(360deg);
+}
