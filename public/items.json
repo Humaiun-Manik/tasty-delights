@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "category": "Breakfast",
+    "name": "Classic Cheeseburger",
+    "img": "https://i.ibb.co/7WcPBG0/breakfast6.png",
+    "price": 6.99,
+    "rating": 4.8,
+    "description": "Sink your teeth into the indulgent delight of our Classic Cheeseburger. Crafted with a juicy beef patty cooked to perfection, nestled between two soft sesame seed buns, and adorned with a generous layer of melted cheddar cheese. Topped with fresh lettuce, ripe tomatoes, crunchy pickles, and a dollop of tangy mayonnaise, this burger is a timeless favorite that satisfies both your cravings and your appetite. Savor the harmonious blend of flavors and textures in every bite. It's not just a burger; it's a culinary experience that harks back to the traditional American diner. Whether you're seeking comfort food or an iconic meal on the go, the Classic Cheeseburger never disappoints. Elevate your taste buds with the perfect balance of savory, cheesy, and slightly sweet notes. Don't miss out on this masterpiece of flavor that's stood the test of time."
+  },
+  {
+    "id": 2,
+    "category": "Breakfast",
+    "name": "Pepperoni",
+    "img": "https://i.ibb.co/8gMc68t/breakfast4.png",
+    "price": 9.99,
+    "rating": 4.7,
+    "description": "Indulge in the timeless delight of our Pepperoni Pizza, where the age-old tradition of Italian craftsmanship meets the satisfying allure of comfort food. Each slice is a masterpiece that starts with a hand-stretched, thin crust, lovingly adorned with a rich and zesty tomato sauce. The crowning glory comes in the form of a symphony of perfectly sliced pepperoni, generously scattered across the canvas, and a generous layer of mozzarella cheese that melts into a gooey, savory embrace. Baked to perfection in our wood-fired oven, the result is a harmonious blend of flavors and textures that dance across your palate. From the slight crunch of the crust to the burst of umami from the pepperoni, every bite is an invitation to experience pizza perfection. Whether you're sharing a meal with loved ones or savoring a moment of solitude, our Pepperoni Pizza promises an unforgettable experience that transcends time and trends. Treat yourself to the classic taste that has captured hearts around the world for generations."
+  },
+  {
+    "id": 3,
+    "category": "Breakfast",
+    "name": "Caesar Salad",
+    "img": "https://i.ibb.co/f0jtfsv/breakfast3.png",
+    "price": 5.99,
+    "rating": 4.5,
+    "description": "Experience the crisp and refreshing sensation of our Caesar Salad, a culinary journey that combines the freshest ingredients with a time-tested dressing. Crisp Romaine lettuce leaves form the base of this masterpiece, providing the perfect canvas for a symphony of flavors. Tossed in our signature Caesar dressing, each leaf is coated in a harmonious blend of tangy and savory, ensuring that every bite delights your taste buds. To enhance the texture and taste, we add house-made croutons that provide a satisfying crunch and a burst of complementary flavor. A generous sprinkling of grated Parmesan cheese adds a touch of umami and rounds out the dish. Whether enjoyed as a refreshing appetizer or a satisfying main course, our Caesar Salad is a celebration of simplicity and sophistication. It's a dish that harkens back to the salad's origins, paying homage to its timeless appeal while adding our own touch of culinary artistry. Elevate your dining experience with the Caesar Salad, where every bite tells a story of flavor, freshness, and culinary mastery."
+  },
+  {
+    "id": 4,
+    "category": "Breakfast",
+    "name": "Chocolate Brownie",
+    "img": "https://i.ibb.co/BwC7skc/breakfast2.png",
+    "price": 3.99,
+    "rating": 4.9,
+    "description": "Embark on a journey of pure indulgence with our Chocolate Brownie, a decadent creation that's a symphony of rich flavors and velvety textures. Each bite is an exquisite experience, starting with the outer layer that boasts a delicate crunch, giving way to a moist and fudgy interior that practically melts in your mouth. The centerpiece of this masterpiece is the finest quality chocolate, artfully blended to create a harmonious balance between sweetness and depth. Whether enjoyed on its own, accompanied by a scoop of vanilla ice cream, or drizzled with a warm caramel sauce, our Chocolate Brownie is a timeless dessert that's perfect for celebrating life's little moments of joy. It's a treat that transcends generations, capturing the hearts of chocolate lovers young and old. With its enticing aroma and irresistible allure, our Chocolate Brownie is more than a dessert; it's an invitation to experience the sheer pleasure of indulgence. Indulge your senses and surrender to the temptation of our Chocolate Brownie, where each bite is a celebration of the finer things in life."
+  },
+  {
+    "id": 5,
+    "category": "Lunch",
+    "name": "Grilled Chicken Sandwich",
+    "img": "https://i.ibb.co/Mg1dQvY/lunch1.png",
+    "price": 7.49,
+    "rating": 4.6,
+    "description": "Satisfy your cravings with the sublime taste of our Grilled Chicken Sandwich, a culinary masterpiece that transforms a simple dish into a symphony of flavor. The star of this creation is a tender and succulent grilled chicken breast, marinated to perfection and cooked to achieve a tantalizing char on the outside while maintaining juiciness within. Nestled between two slices of freshly baked artisan bread, the grilled chicken is accompanied by a medley of crisp lettuce, ripe tomato slices, and a delicate drizzle of house-made mayo. The combination of textures and flavors is a delight for the senses, providing a balance between the earthy richness of the chicken and the freshness of the vegetables. Whether enjoyed as a quick and satisfying lunch or a hearty dinner, our Grilled Chicken Sandwich is a testament to the art of culinary craftsmanship. It's a dish that embodies comfort and sophistication, inviting you to experience the magic that happens when high-quality ingredients and thoughtful preparation come together. Elevate your taste buds and embark on a journey of taste with each bite of our Grilled Chicken Sandwich."
+  },
+  {
+    "id": 6,
+    "category": "Lunch",
+    "name": "Spaghetti Carbonara",
+    "img": "https://i.ibb.co/vPddLqb/lunch4.png",
+    "price": 8.99,
+    "rating": 4.5,
+    "description": "Experience the true essence of Italian comfort food with our Spaghetti Carbonara, a timeless dish that marries simplicity with unparalleled flavor. Each strand of al dente spaghetti is enrobed in a luscious sauce that's a harmonious blend of rich creaminess and savory goodness. The velvety sauce is crafted from high-quality eggs, grated Pecorino Romano cheese, and crisply cooked"
+  },
+  {
+    "id": 7,
+    "category": "Lunch",
+    "name": "Fruit Smoothie",
+    "img": "https://i.ibb.co/5rD2Dnx/lunch5.png",
+    "price": 4.49,
+    "rating": 4.7,
+    "description": "Quench your thirst with our refreshing Fruit Smoothie, a blend of fresh fruits and yogurt that bursts with natural flavors and nutrients. The combination of textures and flavors is a delight for the senses, providing a balance between the earthy richness of the chicken and the freshness of the vegetables. Whether enjoyed as a quick and satisfying lunch or a hearty dinner, our Grilled Chicken Sandwich is a testament to the art of culinary craftsmanship. It's a dish that embodies comfort and sophistication, inviting you to experience the magic that happens when high-quality ingredients and thoughtful preparation come together."
+  },
+  {
+    "id": 8,
+    "category": "Lunch",
+    "name": "Mozzarella Sticks",
+    "img": "https://i.ibb.co/1Jtdqnj/lunch6.png",
+    "price": 5.99,
+    "rating": 4.3,
+    "description": "Enjoy the golden delight of Mozzarella Sticks, perfectly fried and served with marinara sauce for dipping. Topped with fresh lettuce, ripe tomatoes, crunchy pickles, and a dollop of tangy mayonnaise, this burger is a timeless favorite that satisfies both your cravings and your appetite. Savor the harmonious blend of flavors and textures in every bite. It's not just a burger; it's a culinary experience that harks back to the traditional American diner. Whether you're seeking comfort food or an iconic meal on the go, the Classic Cheeseburger never disappoints. Elevate your taste buds with the perfect balance of savory, cheesy, and slightly sweet notes."
+  },
+  {
+    "id": 9,
+    "category": "Dinner",
+    "name": "California Roll",
+    "img": "https://i.ibb.co/VQCbVwV/dinner2.png",
+    "price": 10.99,
+    "rating": 4.8,
+    "description": "Delight in the freshness of the California Roll, a sushi masterpiece featuring avocado, crab, and cucumber. The crowning glory comes in the form of a symphony of perfectly sliced pepperoni, generously scattered across the canvas, and a generous layer of mozzarella cheese that melts into a gooey, savory embrace. Baked to perfection in our wood-fired oven, the result is a harmonious blend of flavors and textures that dance across your palate. From the slight crunch of the crust to the burst of umami from the pepperoni, every bite is an invitation to experience pizza perfection. Whether you're sharing a meal with loved ones or savoring a moment of solitude, our Pepperoni Pizza promises an unforgettable experience that transcends time and trends."
+  },
+  {
+    "id": 10,
+    "category": "Dinner",
+    "name": "Tomato Basil Soup",
+    "img": "https://i.ibb.co/bNLFLrD/dinner1.png",
+    "price": 4.99,
+    "rating": 4.4,
+    "description": "Warm your soul with our Tomato Basil Soup, a comforting blend of tomatoes, basil, and herbs. Tossed in our signature Caesar dressing, each leaf is coated in a harmonious blend of tangy and savory, ensuring that every bite delights your taste buds. To enhance the texture and taste, we add house-made croutons that provide a satisfying crunch and a burst of complementary flavor. A generous sprinkling of grated Parmesan cheese adds a touch of umami and rounds out the dish. Whether enjoyed as a refreshing appetizer or a satisfying main course, our Caesar Salad is a celebration of simplicity and sophistication. It's a dish that harkens back to the salad's origins, paying homage to its timeless appeal while adding our own touch of culinary artistry."
+  },
+  {
+    "id": 11,
+    "category": "Dinner",
+    "name": "Ribeye Steak",
+    "img": "https://i.ibb.co/W6qbHNq/dinner5.png",
+    "price": 14.99,
+    "rating": 4.9,
+    "description": "Indulge in the succulence of our Ribeye Steak, expertly cooked to perfection and seasoned with herbs. The centerpiece of this masterpiece is the finest quality chocolate, artfully blended to create a harmonious balance between sweetness and depth. Whether enjoyed on its own, accompanied by a scoop of vanilla ice cream, or drizzled with a warm caramel sauce, our Chocolate Brownie is a timeless dessert that's perfect for celebrating life's little moments of joy. It's a treat that transcends generations, capturing the hearts of chocolate lovers young and old. With its enticing aroma and irresistible allure, our Chocolate Brownie is more than a dessert; it's an invitation to experience the sheer pleasure of indulgence."
+  },
+  {
+    "id": 12,
+    "category": "Dinner",
+    "name": "Pancake Stack",
+    "img": "https://i.ibb.co/bz7Y7KJ/dinner6.png",
+    "price": 6.49,
+    "rating": 4.6,
+    "description": "Indulge in pure decadence with our Chocolate Brownie, a symphony of rich flavors and velvety textures. Each bite is an exquisite experience, starting with the outer layer that boasts a delicate crunch, giving way to a moist and fudgy interior that practically melts in your mouth. The centerpiece of this masterpiece is the finest quality chocolate, artfully blended to create a harmonious balance between sweetness and depth. Whether enjoyed on its own or drizzled with a warm caramel sauce, our Chocolate Brownie is a timeless dessert that captures hearts young and old."
+  }
+]

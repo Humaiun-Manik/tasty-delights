@@ -1,0 +1,29 @@
+.item img {
+  transition: transform 0.5s;
+}
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.empty-div {
+  flex: 1;
+  width: auto;
+  border-bottom: 2px dotted #8080802c;
+  transition: 0.5s;
+}
+.item:hover .empty-div {
+  border-bottom: 2px dotted #ffc107;
+}
+
+.item h5 {
+  transition: 0.5s;
+}
+.item:hover h5 {
+  color: #ffc107;
+}
+
+.item-info p {
+  font-size: 18px;
+  line-height: 200%;
+  text-align: justify;
+}

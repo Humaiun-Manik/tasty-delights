@@ -1,0 +1,18 @@
+.natural {
+  background: rgba(0, 0, 0, 0.6) url("./../../assets/images/menu/Menu-parallax-1.jpg");
+}
+.bg-img {
+  height: 500px;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin: 100px 0;
+}
+
+.bg-img h1 {
+  color: #fff;
+  font-size: 64px;
+}
+
+.champagne {
+  background: rgba(0, 0, 0, 0.6) url("./../../assets/images/menu/Menu-parallax-2.jpg");
+}
