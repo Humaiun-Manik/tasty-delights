@@ -3,15 +3,15 @@ import "./Menu.css";
 import SubHeader from "../../components/shared/subHeader/SubHeader";
 import Flower from "../../components/Flower";
 import flower from "./../../assets/images/logo/flower-decor.webp";
-import { useLoaderData } from "react-router-dom";
 import Items from "./items/Items";
+import { useLoaderData } from "react-router-dom";
 
 const Menu = () => {
   const items = useLoaderData();
 
-  const breakfastItems = items.filter((item) => item.category === "Breakfast");
-  const lunchItems = items.filter((item) => item.category === "Lunch");
-  const dinnerItems = items.filter((item) => item.category === "Dinner");
+  const breakfastItems = items?.filter((item) => item.category === "Breakfast");
+  const lunchItems = items?.filter((item) => item.category === "Lunch");
+  const dinnerItems = items?.filter((item) => item.category === "Dinner");
 
   return (
     <>

@@ -29,8 +29,8 @@ const Header = () => {
             <Nav.Link as={Link} className="me-4 text-light" to={"/reservation"}>
               Reservation
             </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/shop"}>
-              Shop
+            <Nav.Link as={Link} className="me-4 text-light" to={"/posts"}>
+              Posts
             </Nav.Link>
             <Nav.Link as={Link} className="me-4 text-light" to={"/contact"}>
               Contact Us

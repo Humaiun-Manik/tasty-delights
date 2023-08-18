@@ -7,6 +7,7 @@ import Event from "../../pages/event/Event";
 import Contact from "../../pages/contact/Contact";
 import Reservation from "../../pages/reservation/Reservation";
 import Menu from "../../pages/menu/Menu";
+import ItemDetail from "../../pages/itemDetail/ItemDetail";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,12 @@ const router = createBrowserRouter([
       {
         path: "menu",
         element: <Menu />,
-        loader: async () => fetch("items.json"),
+        loader: () => fetch("/items.json"),
+      },
+      {
+        path: "item/:id",
+        element: <ItemDetail />,
+        loader: () => fetch("/items.json"),
       },
     ],
   },

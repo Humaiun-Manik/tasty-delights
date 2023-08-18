@@ -19,8 +19,8 @@ const Items = ({ time, items }) => {
         <Row key={item.id} className="g-5 my-4 item">
           <Col sm="12" md="2">
             <div>
-              <Link to={"single-item"}>
-                <img className="w-100" src={item.img} alt="" />
+              <Link to={`/item/${item.id}`}>
+                <img className="w-100 food-img" src={item.img} alt="" />
               </Link>
             </div>
           </Col>
@@ -28,7 +28,7 @@ const Items = ({ time, items }) => {
             <div className="item-info h-100 d-flex align-items-center">
               <div>
                 <div className="d-flex justify-content-between align-items-center mb-3">
-                  <Link className="link-dark link-underline link-underline-opacity-0" to={"single-item"}>
+                  <Link className="link-dark link-underline link-underline-opacity-0" to={`/item/${item.id}`}>
                     <h5>{item.name}</h5>
                   </Link>
                   <div className="empty-div mx-3"></div>
