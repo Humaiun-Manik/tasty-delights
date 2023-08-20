@@ -4,6 +4,7 @@ import logo from "./../../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { FaShoppingCart } from "react-icons/fa";
+import ActiveLink from "../../activeLink/ActiveLink";
 
 const Header = () => {
   return (
@@ -15,32 +16,33 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto fs-5 menu">
-            <Nav.Link as={Link} className="me-4 text-light" to={"/"}>
+            <ActiveLink className="me-4 text-light" to={"/home"}>
               Home
-            </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/about"}>
+            </ActiveLink>
+            <ActiveLink className="me-4 text-light" to={"/about"}>
               About Us
-            </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/event"}>
+            </ActiveLink>
+            <ActiveLink className="me-4 text-light" to={"/event"}>
               Events
-            </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/menu"}>
+            </ActiveLink>
+            <ActiveLink className="me-4 text-light" to={"/menu"}>
               Menu
-            </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/reservation"}>
+            </ActiveLink>
+            <ActiveLink className="me-4 text-light" to={"/reservation"}>
               Reservation
-            </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/contact"}>
+            </ActiveLink>
+            <ActiveLink className="me-4 text-light" to={"/contact"}>
               Contact Us
-            </Nav.Link>
+            </ActiveLink>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">
+          <Nav className="menu fs-5">
+            <Nav.Link href="">
               <FaShoppingCart />
             </Nav.Link>
-            <Nav.Link as={Link} to="/login">
+            <Nav.Link as={Link} className="text-success-emphasis" to="/login">
               Login
             </Nav.Link>
+            <button className="border-0 bg-black text-danger">Logout</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
