@@ -1,0 +1,5 @@
+.login-container {
+  background: rgba(7, 3, 59, 0.384) url("./../assets/images/menu/login1.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}

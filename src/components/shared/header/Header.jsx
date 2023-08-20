@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -29,17 +30,16 @@ const Header = () => {
             <Nav.Link as={Link} className="me-4 text-light" to={"/reservation"}>
               Reservation
             </Nav.Link>
-            <Nav.Link as={Link} className="me-4 text-light" to={"/posts"}>
-              Posts
-            </Nav.Link>
             <Nav.Link as={Link} className="me-4 text-light" to={"/contact"}>
               Contact Us
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="#deets">
+              <FaShoppingCart />
+            </Nav.Link>
+            <Nav.Link as={Link} to="/login">
+              Login
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

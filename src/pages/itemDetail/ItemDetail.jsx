@@ -6,31 +6,32 @@ import { Col, Row } from "react-bootstrap";
 import { Rating } from "@smastrom/react-rating";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
+import { Carousel } from "react-responsive-carousel";
+import RelatedItems from "./relatedItems/RelatedItems";
 
 const ItemDetail = () => {
   const items = useLoaderData();
   const { id } = useParams();
   const singleItem = items.find((item) => item.id === parseInt(id));
   const relatedItem = items.filter((item) => item.category === singleItem.category);
-  const { name, img, rating, price, description, category } = singleItem;
-  const [image, setImage] = useState(singleItem.img);
+  const { name, rating, price, description, category, index } = singleItem;
+  const [count, setCount] = useState(1);
 
   return (
     <div>
       <SubHeader text={name} />
       <div className="container">
         <Row className="my-5 g-5">
-          <Col sm="12" md="4">
-            <img className="w-100" src={image} alt="" />
-            <Row className="mt-5">
+          <Col sm="12" md="5">
+            <Carousel showArrows={false} showStatus={false} showIndicators={false} selectedItem={index}>
               {relatedItem.map((item) => (
-                <Col key={item.id}>
-                  <img onClick={() => setImage(item.img)} className="w-100" src={item.img} alt="" />
-                </Col>
+                <div className="border-0" key={item.id}>
+                  <img className="w-100" src={item.img} alt="" />
+                </div>
               ))}
-            </Row>
+            </Carousel>
           </Col>
-          <Col sm="12" md="8">
+          <Col sm="12" md="7">
             <div>
               <h3>{name}</h3>
               <div className="d-flex my-4">
@@ -39,13 +40,13 @@ const ItemDetail = () => {
               </div>
               <h4 className="mb-5">$ {price}</h4>
               <p className="fs-5 text-black-50 lh-lg">{description.slice(0, 200)}</p>
-              <div className="d-flex m4-5">
+              <div className="d-flex mt-5">
                 <div className="item-count">
-                  <button>
+                  <button disabled={count === 20} onClick={() => setCount(count + 1)}>
                     <AiFillPlusCircle className="text-warning fs-1" />
                   </button>
-                  <span>1</span>
-                  <button>
+                  <span>{count}</span>
+                  <button disabled={count === 1} onClick={() => setCount(count - 1)}>
                     <AiFillMinusCircle className="text-warning fs-1" />
                   </button>
                 </div>
@@ -58,11 +59,14 @@ const ItemDetail = () => {
             </div>
           </Col>
         </Row>
-        <h4 className="mb-3">Description</h4>
-        <p style={{ textAlign: "justify" }} className="fs-5 text-black-50 lh-lg">
-          {description}
-        </p>
+        <div>
+          <h4 className="mb-3">Description</h4>
+          <p style={{ textAlign: "justify" }} className="fs-5 text-black-50 lh-lg">
+            {description}
+          </p>
+        </div>
       </div>
+      <RelatedItems items={relatedItem} />
     </div>
   );
 };
