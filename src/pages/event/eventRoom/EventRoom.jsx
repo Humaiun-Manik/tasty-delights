@@ -27,7 +27,7 @@ const EventRoom = () => {
             <div className="p-5 text-end h-100 d-flex align-items-center justify-content-center">
               <div>
                 <h2
-                  className="text-body-tertiary fw-semibold mb-0"
+                  className="text-body-tertiary mb-0"
                   style={{ fontSize: "34px", fontFamily: "'Allura', cursive" }}
                 >
                   Group Dinner
@@ -60,7 +60,7 @@ const EventRoom = () => {
             <div className="p-5 h-100 d-flex align-items-center justify-content-center">
               <div>
                 <h2
-                  className="text-body-tertiary fw-semibold mb-0"
+                  className="text-body-tertiary mb-0"
                   style={{ fontSize: "34px", fontFamily: "'Allura', cursive" }}
                 >
                   Wine Tastings
@@ -83,7 +83,7 @@ const EventRoom = () => {
             <div className="p-5 h-100 text-end d-flex align-items-center justify-content-center">
               <div>
                 <h2
-                  className="text-body-tertiary fw-semibold mb-0"
+                  className="text-body-tertiary mb-0"
                   style={{ fontSize: "34px", fontFamily: "'Allura', cursive" }}
                 >
                   Playing Musics

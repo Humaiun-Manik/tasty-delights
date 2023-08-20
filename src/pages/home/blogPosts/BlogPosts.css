@@ -11,6 +11,7 @@
 .blog button:hover {
   background-color: #ffc107;
 }
+
 .blog h4 {
   margin: 20px 0;
   transition: 0.5s;
@@ -18,11 +19,13 @@
 .blog:hover h4 {
   color: #ffc107;
 }
+
 .blog span {
   color: #4d4d4d;
   font-size: 14px;
   text-transform: uppercase;
 }
+
 .blog .box {
   width: 5px;
   height: 5px;

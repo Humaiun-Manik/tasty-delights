@@ -10,7 +10,7 @@ import img4 from "./../../../assets/images/about/client-4.webp";
 
 const Rewards = () => {
   return (
-    <div>
+    <div className="pb-5">
       <div className="container my-5 py-5">
         <h1 className="text-center">Rewards We Received</h1>
         <Flower>{flower}</Flower>

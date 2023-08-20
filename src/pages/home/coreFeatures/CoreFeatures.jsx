@@ -18,7 +18,7 @@ const CoreFeatures = () => {
               <Card.Body>
                 <Card.Title>
                   <h2
-                    className="text-body-tertiary fw-semibold mb-0"
+                    className="text-body-tertiary mb-0"
                     style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
                   >
                     History of
@@ -50,7 +50,7 @@ const CoreFeatures = () => {
               <Card.Body>
                 <Card.Title>
                   <h2
-                    className="text-body-tertiary fw-semibold mb-0"
+                    className="text-body-tertiary mb-0"
                     style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
                   >
                     Delicated

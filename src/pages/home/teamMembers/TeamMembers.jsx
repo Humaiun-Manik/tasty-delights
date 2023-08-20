@@ -15,7 +15,7 @@ const TeamMembers = () => {
       <div className="container">
         <div className="text-center my-5">
           <h2
-            className="text-body-tertiary fw-semibold mb-0"
+            className="text-body-tertiary mb-0"
             style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
           >
             For your comfort

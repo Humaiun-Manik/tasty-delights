@@ -11,10 +11,7 @@ const BlogPosts = () => {
   return (
     <div className="container">
       <div className="text-center my-5">
-        <h2
-          className="text-body-tertiary fw-semibold mb-0"
-          style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
-        >
+        <h2 className="text-body-tertiary mb-0" style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}>
           Latest News
         </h2>
         <h1>Blog Posts</h1>

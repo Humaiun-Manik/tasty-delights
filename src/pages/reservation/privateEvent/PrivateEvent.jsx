@@ -105,7 +105,7 @@ const PrivateEvent = () => {
           <button className="submit-btn mt-5 mb-2" type="submit">
             Submit Now
           </button>
-          <p>POWERED BY OPENTABLE</p>
+          <p className="mt-3">POWERED BY OPENTABLE</p>
         </Form>
       </div>
     </div>

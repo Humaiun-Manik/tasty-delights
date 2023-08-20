@@ -13,7 +13,7 @@ const PrivateEvents = () => {
       <div className="container my-5 p-5">
         <div className="text-center">
           <h2
-            className="text-body-tertiary fw-semibold mb-0"
+            className="text-body-tertiary mb-0"
             style={{ fontSize: "44px", fontFamily: "'Allura', cursive" }}
           >
             Arrangements and Arrange

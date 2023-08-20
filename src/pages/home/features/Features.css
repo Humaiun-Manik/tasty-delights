@@ -1,10 +1,12 @@
 .feature {
   border-top: 4px solid red !important;
   transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 .feature:hover {
   border-top: 4px solid #ffc107 !important;
 }
+
 .title {
   transition: 1s;
 }
@@ -22,15 +24,18 @@
   background-size: cover;
   background-blend-mode: darken;
 }
+
 .discount-text {
   width: 50%;
   text-align: center;
 }
+
 .discount-text h2 {
   color: #ffc107;
   font-size: 64px;
   margin: 30px 0;
 }
+
 .discount-text h1 {
   color: #fff;
   font-size: 74px;
@@ -38,11 +43,13 @@
   width: 100%;
   border: 10px dotted #ffc107;
 }
+
 .discount-text p {
   color: #fff;
   font-size: 28px;
   margin: 20px 0;
 }
+
 .discount-text a {
   color: #ffc107;
   font-size: 76px;

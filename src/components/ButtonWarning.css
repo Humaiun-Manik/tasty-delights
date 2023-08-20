@@ -4,6 +4,7 @@
   padding: 10px 0;
   position: relative;
 }
+
 .btn-container::before,
 .btn-container::after {
   content: "";
@@ -14,18 +15,22 @@
   background-color: #ffc107;
   transition: 0.8s;
 }
+
 .btn-container::before {
   top: 0;
   right: 0;
 }
+
 .btn-container::after {
   left: 0;
   bottom: 0;
 }
+
 .btn-container:hover::before,
 .btn-container:hover::after {
   width: 100%;
 }
+
 .btn-container button {
   font-size: 24px;
   color: white;

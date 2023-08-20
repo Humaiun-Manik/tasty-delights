@@ -2,12 +2,14 @@
   display: flex;
   margin-top: 30px;
 }
+
 .seasonal-menu h4 {
   transition: 0.5s;
 }
 .seasonal-menu:hover h4 {
   color: #ffc107;
 }
+
 .seasonal-menu img {
   width: 60px;
   margin-top: 10px;
@@ -20,6 +22,7 @@
 .seasonal-menu-left {
   background-color: #f4f1ea;
 }
+
 .under-line {
   width: 200px;
   border-bottom: 2px solid #a0a0a0;
@@ -31,6 +34,7 @@
 .item {
   position: relative;
 }
+
 .content {
   width: 100%;
   height: 100%;
@@ -44,6 +48,7 @@
 .item:hover .content {
   opacity: 1;
 }
+
 .plus-icon {
   color: #fff;
   font-size: 200px;

@@ -5,12 +5,15 @@
   margin: auto;
   transition: 0.8s;
 }
+
 .single-event:hover .gray-box {
   opacity: 0;
 }
+
 .event-title {
   transition: 0.5s;
 }
+
 .single-event:hover .event-title {
   color: #ffc107;
 }

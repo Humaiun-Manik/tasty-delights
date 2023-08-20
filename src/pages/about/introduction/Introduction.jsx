@@ -26,7 +26,7 @@ const Introduction = () => {
           <h3>– Robert Williams</h3>
           <p className="text-warning fs-5">Founder - Ceo</p>
         </div>
-        <Row xs={1} md={2} className="gx-4 mt-5">
+        <Row xs={1} md={2} className="gx-4 my-5">
           <Col>
             <div className="image-container">
               <img className="w-100" src={img1} alt="" />

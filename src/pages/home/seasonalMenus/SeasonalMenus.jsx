@@ -111,10 +111,7 @@ const SeasonalMenus = () => {
           <Col sm={12} md={4} className="text-center p-5 seasonal-menu-left">
             <div className="w-100 h-100 d-flex align-items-center">
               <div>
-                <h1
-                  className="text-body-tertiary fw-semibold mb-0"
-                  style={{ fontFamily: "'Allura', cursive" }}
-                >
+                <h1 className="text-body-tertiary mb-0" style={{ fontFamily: "'Allura', cursive" }}>
                   Embracing
                 </h1>
                 <h1>Seasonal Menus</h1>

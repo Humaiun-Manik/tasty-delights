@@ -2,6 +2,7 @@
   position: relative;
   border-bottom: 5px solid #ffac11b7;
 }
+
 .member-info {
   width: 100%;
   height: 0%;
@@ -16,15 +17,18 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .team-member:hover .member-info {
   height: 30%;
   opacity: 1;
 }
+
 .icons {
   color: #ffac11b7;
   font-size: 34px;
   cursor: pointer;
 }
+
 .taste-improve {
   height: 600px;
   background: rgba(0, 0, 0, 0) url("./../../../assets/images/home/niklas-ohlrogge-cLpBQqSMEWI-unsplash.jpg");
@@ -32,10 +36,12 @@
   background-blend-mode: darken;
   margin: 100px 0;
 }
+
 .taste-improve h1 {
   color: #fff;
   font-size: 68px;
 }
+
 .taste-improve h2 {
   color: #ffc107;
   font-size: 64px;

@@ -6,15 +6,18 @@
 .client-reward img:hover {
   filter: grayscale(0%);
 }
+
 .success-story {
   height: 500px;
   background: rgba(0, 0, 0, 0.6) url("./../../../assets/images/about/ting-tian.jpg");
   background-size: cover;
   background-blend-mode: darken;
 }
+
 .success-story h1 {
   font-size: 64px;
 }
+
 .success-story h2 {
   font-size: 58px;
   color: #ffc107;

@@ -1,6 +1,7 @@
 .logo {
   width: 215px;
 }
+
 .address-info {
   height: 100%;
   display: flex;
@@ -8,14 +9,17 @@
   align-items: center;
   justify-content: center;
 }
+
 .open-info {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .open-info h3 {
   color: #ffc107;
 }
+
 .open-info div {
   width: 60px;
   height: 3px;
@@ -27,9 +31,11 @@
 .open-info:hover div {
   background-color: #ffc107;
 }
+
 .open-info p {
   color: #ffc107;
 }
+
 .contact-info {
   height: 100%;
   display: flex;
@@ -37,6 +43,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .contact-info p {
   font-size: 20px;
   margin-top: 24px;
@@ -46,6 +53,7 @@
 .contact-info p:hover {
   color: #ffc107;
 }
+
 .contact-info span {
   font-size: 18px;
 }
