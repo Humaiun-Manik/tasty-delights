@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { FaShoppingCart } from "react-icons/fa";
 import ActiveLink from "../../activeLink/ActiveLink";
+import { AuthContext } from "../../../contexts/AuthProvider";
 
 const Header = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-black" bg="dark" data-bs-theme="dark">
       <Container>
