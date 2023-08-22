@@ -8,6 +8,7 @@ import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
 import { Carousel } from "react-responsive-carousel";
 import RelatedItems from "./relatedItems/RelatedItems";
+import { Helmet } from "react-helmet-async";
 
 const ItemDetail = () => {
   const items = useLoaderData();
@@ -19,6 +20,9 @@ const ItemDetail = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Tasty Delights | Item Detail</title>
+      </Helmet>
       <SubHeader text={name} />
       <div className="container">
         <Row className="my-5 g-5">

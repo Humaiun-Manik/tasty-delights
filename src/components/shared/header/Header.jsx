@@ -48,16 +48,13 @@ const Header = () => {
             </ActiveLink>
           </Nav>
           <Nav className="menu fs-5">
-            <Nav.Link href="">
-              <FaShoppingCart />
-            </Nav.Link>
             {!user ? (
               <Nav.Link as={Link} className="text-success-emphasis" to="/login">
-                Login
+                Sign In
               </Nav.Link>
             ) : (
               <>
-                <span className="mt-3 mx-2 text-white-50">{user?.displayName}</span>
+                <span className="mx-2 text-white-50">{user?.displayName}</span>
                 <button onClick={handleLogout} className="border-0 bg-black text-danger">
                   Logout
                 </button>

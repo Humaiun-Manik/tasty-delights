@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const [passwordType, setPasswordType] = useState("password");
@@ -39,6 +40,9 @@ const Login = () => {
 
   return (
     <div className="email-login-content d-flex align-items-center justify-content-center">
+      <Helmet>
+        <title>Tasty Delights | Login</title>
+      </Helmet>
       <div className=" w-100 mx-5">
         <h4 className="text-center fw-bold">Login to your account</h4>
         <p className="text-center text-secondary mb-5">

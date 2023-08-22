@@ -5,6 +5,7 @@ import Flower from "../../components/Flower";
 import flower from "./../../assets/images/logo/flower-decor.webp";
 import Items from "./items/Items";
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Menu = () => {
   const items = useLoaderData();
@@ -15,6 +16,9 @@ const Menu = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Tasty Delights | Menu</title>
+      </Helmet>
       <SubHeader text="Menu" />
       <div className="container  my-5">
         <div className="text-center py-5 mx-auto w-75">

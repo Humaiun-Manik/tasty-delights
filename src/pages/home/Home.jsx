@@ -5,10 +5,14 @@ import CoreFeatures from "./coreFeatures/CoreFeatures";
 import Features from "./features/Features";
 import SeasonalMenus from "./seasonalMenus/SeasonalMenus";
 import TeamMembers from "./teamMembers/TeamMembers";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Tasty Delights | Home</title>
+      </Helmet>
       <Banner />
       <CoreFeatures />
       <Features />
