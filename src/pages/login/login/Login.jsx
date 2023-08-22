@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import { toast } from "react-toastify";
@@ -9,7 +9,11 @@ import { toast } from "react-toastify";
 const Login = () => {
   const [passwordType, setPasswordType] = useState("password");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
   const { login } = useContext(AuthContext);
+
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -20,14 +24,13 @@ const Login = () => {
     login(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         if (!user.emailVerified) {
           toast.error("Please verify your email address");
-          return;
         }
         setError("");
         form.reset();
         toast.success(`Welcome back, ${user.displayName}! Your login was successful.`);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         error && setError("Login failed. Please check your email and password.");

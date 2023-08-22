@@ -6,9 +6,18 @@ import "./Header.css";
 import { FaShoppingCart } from "react-icons/fa";
 import ActiveLink from "../../activeLink/ActiveLink";
 import { AuthContext } from "../../../contexts/AuthProvider";
+import { toast } from "react-toastify";
 
 const Header = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logout()
+      .then(() => {
+        toast.success("Sign-out successful.");
+      })
+      .catch();
+  };
 
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-black" bg="dark" data-bs-theme="dark">
@@ -42,10 +51,18 @@ const Header = () => {
             <Nav.Link href="">
               <FaShoppingCart />
             </Nav.Link>
-            <Nav.Link as={Link} className="text-success-emphasis" to="/login">
-              Login
-            </Nav.Link>
-            <button className="border-0 bg-black text-danger">Logout</button>
+            {!user ? (
+              <Nav.Link as={Link} className="text-success-emphasis" to="/login">
+                Login
+              </Nav.Link>
+            ) : (
+              <>
+                <span className="mt-3 mx-2 text-white-50">{user?.displayName}</span>
+                <button onClick={handleLogout} className="border-0 bg-black text-danger">
+                  Logout
+                </button>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

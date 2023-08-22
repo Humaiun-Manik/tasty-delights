@@ -51,9 +51,7 @@ const SignUp = () => {
 
   const updateUserData = (user, name) => {
     updateProfile(user, { displayName: name })
-      .then(() => {
-        toast.success("User name updated");
-      })
+      .then(() => {})
       .catch((error) => {
         setError(error.message);
       });

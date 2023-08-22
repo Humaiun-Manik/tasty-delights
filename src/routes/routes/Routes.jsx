@@ -13,6 +13,7 @@ import LoginLayout from "../../layout/LogInLayOut";
 import Login from "../../pages/login/login/Login";
 import SignUp from "../../pages/login/signup/SignUp";
 import ForgotPassword from "../../pages/login/forgotPassword/ForgotPassword";
+import PrivateRoute from "../privateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -68,7 +69,11 @@ const router = createBrowserRouter([
       },
       {
         path: "item/:id",
-        element: <ItemDetail />,
+        element: (
+          <PrivateRoute>
+            <ItemDetail />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/items.json"),
       },
       {
