@@ -68,7 +68,7 @@ const SignUp = () => {
       <div className=" w-100 mx-5">
         <h4 className="text-center fw-bold mb-4">Sign up for free!</h4>
         <Form onSubmit={handleRegister}>
-          <Form.Group className="mb-4" controlId="formBasicEmail">
+          <Form.Group className="mb-4" controlId="">
             <Form.Control
               className="py-2 ps-4 fs-5"
               type="text"
@@ -94,6 +94,7 @@ const SignUp = () => {
               type={passwordType}
               name="password"
               placeholder="Password"
+              autoComplete="on"
               required
             ></Form.Control>
             {passwordType === "password" ? (

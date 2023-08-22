@@ -68,8 +68,9 @@ const Login = () => {
               type={passwordType}
               name="password"
               placeholder="Password"
+              autoComplete="on"
               required
-            ></Form.Control>
+            />
             {passwordType === "password" ? (
               <AiOutlineEye
                 onClick={() => setPasswordType(passwordType === "password" ? "text" : "password")}

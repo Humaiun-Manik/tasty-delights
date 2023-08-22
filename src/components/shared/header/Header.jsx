@@ -3,7 +3,6 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { FaShoppingCart } from "react-icons/fa";
 import ActiveLink from "../../activeLink/ActiveLink";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import { toast } from "react-toastify";
