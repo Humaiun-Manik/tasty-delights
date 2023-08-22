@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { AuthContext } from "../../../contexts/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  const [passwordType, setPasswordType] = useState("password");
+  const [error, setError] = useState("");
+  const { login } = useContext(AuthContext);
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    login(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        if (!user.emailVerified) {
+          toast.error("Please verify your email address");
+          return;
+        }
+        setError("");
+        form.reset();
+        toast.success(`Welcome back, ${user.displayName}! Your login was successful.`);
+      })
+      .catch((error) => {
+        error && setError("Login failed. Please check your email and password.");
+      });
+  };
+
   return (
     <div className="email-login-content d-flex align-items-center justify-content-center">
       <div className=" w-100 mx-5">
@@ -15,17 +44,38 @@ const Login = () => {
             Sign Up Free!
           </Link>
         </p>
-        <Form className="">
+        <Form onSubmit={handleLogin}>
           <Form.Group className="mb-4" controlId="formBasicEmail">
-            <Form.Control className="py-2 ps-4 fs-5" type="email" placeholder="Email address" />
+            <Form.Control
+              className="py-2 ps-4 fs-5"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
           </Form.Group>
 
           <Form.Group className="mb-4 position-relative" controlId="formBasicPassword">
-            <Form.Control className="py-2 ps-4 fs-5" type="password" placeholder="Password"></Form.Control>
-            <AiOutlineEyeInvisible
-              style={{ marginTop: "-8px" }}
-              className="fs-5 me-3 position-absolute top-50 end-0 eye "
-            />
+            <Form.Control
+              className="py-2 ps-4 fs-5"
+              type={passwordType}
+              name="password"
+              placeholder="Password"
+              required
+            ></Form.Control>
+            {passwordType === "password" ? (
+              <AiOutlineEye
+                onClick={() => setPasswordType(passwordType === "password" ? "text" : "password")}
+                style={{ marginTop: "-8px", cursor: "pointer" }}
+                className="fs-5 me-3 position-absolute top-50 end-0 eye "
+              />
+            ) : (
+              <AiOutlineEyeInvisible
+                onClick={() => setPasswordType(passwordType === "password" ? "text" : "password")}
+                style={{ marginTop: "-8px", cursor: "pointer" }}
+                className="fs-5 me-3 position-absolute top-50 end-0 eye "
+              />
+            )}
           </Form.Group>
           <Form.Group
             className="mb-4 d-flex align-items-center justify-content-between"
@@ -40,6 +90,7 @@ const Login = () => {
             Login with email
           </Button>
         </Form>
+        <p className="text-danger mb-0 mt-3">{error}</p>
       </div>
     </div>
   );
